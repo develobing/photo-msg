@@ -1,3 +1,9 @@
+# Defaults
+node_modules
+dist
+build
+
+# Yarn
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
