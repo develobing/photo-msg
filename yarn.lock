@@ -888,7 +888,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jquery@npm:^3.3.1":
+"jquery@npm:>=1.12.0, jquery@npm:^3.3.1":
   version: 3.7.1
   resolution: "jquery@npm:3.7.1"
   checksum: 10c0/808cfbfb758438560224bf26e17fcd5afc7419170230c810dd11f5c1792e2263e2970cca8d659eb84fcd9acc301edb6d310096e450277d54be4f57071b0c82d9
@@ -1243,6 +1243,7 @@ __metadata:
     express: "npm:^4.16.3"
     jquery: "npm:^3.3.1"
     nodemon: "npm:^3.1.7"
+    toastr: "npm:^2.1.4"
   languageName: unknown
   linkType: soft
 
@@ -1572,6 +1573,15 @@ __metadata:
   dependencies:
     is-number: "npm:^7.0.0"
   checksum: 10c0/487988b0a19c654ff3e1961b87f471702e708fa8a8dd02a298ef16da7206692e8552a0250e8b3e8759270f62e9d8314616f6da274734d3b558b1fc7b7724e892
+  languageName: node
+  linkType: hard
+
+"toastr@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "toastr@npm:2.1.4"
+  dependencies:
+    jquery: "npm:>=1.12.0"
+  checksum: 10c0/325ef9faa5d67fced64461a3c641002ca24492917c9d8c5c1a782d11f7e3ed5281683e3e00310c756365e3475ef6719e6acd93462228b8ac050eb6feee8ced60
   languageName: node
   linkType: hard
 
