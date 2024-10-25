@@ -4,6 +4,7 @@ node_modules
 dist
 build
 server/db.json
+sw.*
 workbox-*
 
 # Yarn
