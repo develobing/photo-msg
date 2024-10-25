@@ -1,8 +1,10 @@
 # Defaults
+.DS_Store
 node_modules
 dist
 build
 server/db.json
+workbox-*
 
 # Yarn
 .yarn/*

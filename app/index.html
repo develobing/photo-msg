@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#19A2B8" />
+    <link rel="icon" href="/icons/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json" />
     <title>Photo Message</title>
 
     <!-- Styles -->
@@ -33,6 +36,18 @@
         if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
           // Init App
           _init();
+
+          // Register Service Worker
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+              .register('/sw.js')
+              .then(() => {
+                console.log('Service Worker Registered!');
+              })
+              .catch((error) => {
+                console.error('Service Worker Registration Failed:', error);
+              });
+          }
         } else {
           toastr.error(
             null,
